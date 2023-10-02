@@ -1,0 +1,128 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  width: 600px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.product-details {
+  padding-right: 40px;
+}
+img {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  float: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.brand-name {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header {
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.4rem;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.real-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.discount-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  color: hsl(158, 36%, 37%);
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  width: 240px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.footer {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 796px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    overflow: hidden;
+  }
+  .header {
+    font-size: 13px;
+
+    margin-top: 0.8rem;
+  }
+
+  .brand-name {
+    margin-top: 0;
+    font-size: 35px;
+  }
+  .product-details {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .description {
+    font-size: 16.5px;
+    line-height: 1.7rem;
+  }
+  img {
+    width: 370px;
+    height: 470px;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
